@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Attendance Management (III Year,AIML - B)</h1>
+
+    <table class="attendance-table">
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Attendance</th>
+            </tr>
+        </thead>
+        <tbody id="attendance-list">
+            <!-- Dynamic student list will be populated here -->
+        </tbody>
+    </table>
+
+    <button id="submit-btn" onclick="submitAttendance()" class="attendance-btn">Submit Attendance</button>
+
+    <h2 id="summary-title" style="display: none;">Attendance Summary:</h2>
+    <table id="attendance-summary" class="attendance-summary" style="display: none;">
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Attendance Status</th>
+            </tr>
+        </thead>
+        <tbody id="attendance-summary-list">
+            <!-- Final submitted attendance summary will be shown here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
